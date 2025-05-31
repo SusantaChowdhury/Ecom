@@ -1,0 +1,126 @@
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  border-radius: 10px;
+  border:3px solid black;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-name-price {
+  min-width: 150px;
+}
+
+.cart-name-price h2 {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.cart-name-price .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.cart-description {
+  flex: 1;
+  min-width: 200px;
+}
+
+.cart-description p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.seller-info,
+.stock-info {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.cart-quantity {
+  min-width: 50px;
+}
+
+.cart-quantity input {
+  width: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.2rem;
+  background-color: #f9f9f9;
+}
+
+.cart-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.qty-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rej-btn {
+  background-color: red;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  justify-content:center;
+  align-items:center;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 25px;
+  width: 15px;
+}
+
+.remove-btn img {
+  height: 16px;
+  width: 16px;
+  justify-content: center;
+}
+
+
